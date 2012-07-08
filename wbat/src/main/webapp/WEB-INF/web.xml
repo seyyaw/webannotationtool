@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>webannotater</display-name>
+  <welcome-file-list>
+    <welcome-file>annotate.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>WebAnnotate</display-name>
+    <servlet-name>WebAnnotate</servlet-name>
+    <servlet-class>de.wbat.annotate.controller.WebAnnotate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WebAnnotate</servlet-name>
+    <url-pattern>/webannotater</url-pattern>
+  </servlet-mapping>
+</web-app>

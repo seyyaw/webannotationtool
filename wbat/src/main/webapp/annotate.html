@@ -1,0 +1,68 @@
+<html lang="de">
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=utf-8">
+
+<head>
+
+<title>Marking/Annotating Texts using mouse selection or double click </title>
+
+<link rel="stylesheet" href="styles/annotate.css" type="text/css"
+media="screen"/>
+
+<script type="text/javascript" src="scripts/jquery-1.7.2.min.js"></script>
+
+
+<!-- 
+Load Text from file to the div
+ -->
+<script type="text/javascript" src="scripts/loadTextFile.js"></script> 
+<!-- Here, we have different javascripts (jquery) and ajax functions 
+script includes  getting the selected text, geting index of selected text, 
+higlighting the text selected and so on..... -->
+
+<script type="text/javascript" src="scripts/annotate.js"></script>
+
+</head>
+
+<body>
+	<div class="header">
+	
+			Annotate the following document with different markers.
+			If the marker you need is not in the list of marker in the left panel you can create 
+			your own marker by typing it's name and clicking on 
+			<span style="color:blue">  create marker</span> button.
+		
+		</div>
+
+	<div class="left">
+		<div>
+			<div>
+				<input type="text" id="annotatinName"></input>
+				<input id="createRbtn" type="button" value="create marker " />
+			</div>
+			Choose markers
+			<div id="markupRbtn">
+				<p><input type="radio" name="markup" value="mark0" checked="true" ><span id="mark0"> Person</span></input>
+						<input type="text" size="2" style="background-color:#FFFF00;" disabled="disabled"></input>
+				</p>
+				<p><input type="radio" name="markup" value="mark1"><span id="mark1"> Organization</span></input>
+					<input type="text" size="2" style="background-color:#808080;" disabled="disabled"></input>
+				</p>
+				<p><input type="radio" name="markup" value="mark2"><span id="mark2">Location</span></input>
+					<input type="text" size="2" style="background-color:#800080;" disabled="disabled"></input>
+				</p>
+			</div>
+			
+			<input id="submit" type="button" value="submit" />
+			<input id="refresh" type="button" value="refresh" />
+		</div>
+		
+	</div>
+	
+	
+	<div id="sampletext">
+	</div>
+	
+
+</body>
+</html>
+<!--  The latest JQuery Library -->
